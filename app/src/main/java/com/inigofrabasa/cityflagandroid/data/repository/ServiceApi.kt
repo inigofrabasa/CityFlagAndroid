@@ -9,4 +9,7 @@ interface ServiceApi {
 
     @GET(ApiConstants.PATH_TOP_FREE_APPLICATIONS)
     suspend fun getRemoteAllApplications(@Query(ApiConstants.QUERY_LIMIT) limit: Int): retrofit2.Response<Model.Applications>
+
+    @GET(ApiConstants.PATH_TOP_FREE_APPLICATIONS)
+    suspend fun getRemoteAllApplicationsTest(@Query(ApiConstants.QUERY_LIMIT) limit: Int): Model.Applications
 }
