@@ -53,6 +53,14 @@ class ApplicationsRepository {
         responseHelper.removeObserver(observer)
     }
 
+    fun getEntry() : Model.Entry?{
+        return Cache.getInstance().entry
+    }
+
+    fun setEntry(entry : Model.Entry){
+        Cache.getInstance().entry = entry
+    }
+
     companion object {
         @Volatile private var instance: ApplicationsRepository? = null
         fun getInstance() =

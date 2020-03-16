@@ -1,3 +1,6 @@
 <resources>
 
+    <string name="title_text_place_holder">Title Text</string>
+    <string name="summary_text_place_holder">Summary Text</string>
+    <string name="release_date_place_holder">Release Date</string>
 </resources>

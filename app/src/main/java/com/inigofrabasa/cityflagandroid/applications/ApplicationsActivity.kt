@@ -1,7 +1,9 @@
 package com.inigofrabasa.cityflagandroid.applications
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -9,9 +11,11 @@ import androidx.lifecycle.ViewModelProviders
 import com.inigofrabasa.cityflagandroid.ApiConstants.STATUS_OK
 import com.inigofrabasa.cityflagandroid.R
 import com.inigofrabasa.cityflagandroid.adapters.EntryAdapter
-import com.inigofrabasa.cityflagandroid.data.model.Model
+import com.inigofrabasa.cityflagandroid.applicationDetail.DetailActivity
 import com.inigofrabasa.cityflagandroid.data.model.ResponseHelper
 import com.inigofrabasa.cityflagandroid.databinding.ActivityMainBinding
+
+const val TAG = "Application Name"
 
 class ApplicationsActivity : AppCompatActivity() {
 
@@ -33,8 +37,10 @@ class ApplicationsActivity : AppCompatActivity() {
 
         val adapter = EntryAdapter()
         adapter.setOnClickApplicationListener(object : EntryAdapter.ListenerApplicationSelected{
-            override fun onClickFoundation(application: Model.Entry) {
-                Toast.makeText(this@ApplicationsActivity, application.name.label, Toast.LENGTH_SHORT).show()
+            override fun onClickFoundation(name: String) {
+                Log.v(TAG, name)
+                val intent = Intent(this@ApplicationsActivity, DetailActivity::class.java)
+                startActivity(intent)
             }
         })
         binding.applicationsRecycler.adapter = adapter

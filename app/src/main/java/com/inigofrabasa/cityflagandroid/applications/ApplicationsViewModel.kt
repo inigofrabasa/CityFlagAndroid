@@ -11,7 +11,6 @@ class ApplicationsViewModel : ViewModel(){
     val responseHelperValue: LiveData<ResponseHelper>
         get() = ApplicationsRepository.getInstance().responseHelper
 
-
     fun getApplications(){
         ApplicationsRepository.getInstance().getApplications().observeForever { result ->
             applicationsList.value = result.feed.entry

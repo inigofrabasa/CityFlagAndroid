@@ -13,7 +13,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".applications.ApplicationsActivity">
+        tools:context=".applications.ApplicationsActivity"
+        android:padding="25dp"
+        android:background="@color/colorPrimary"
+        >
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/applications_recycler"
