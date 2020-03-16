@@ -1,6 +1,6 @@
 package com.inigofrabasa.cityflagandroid.data.repository
 
-import com.inigofrabasa.cityflagandroid.ApiConstants
+import com.inigofrabasa.cityflagandroid.utils.ApiConstants
 import com.inigofrabasa.cityflagandroid.data.model.Model
 import retrofit2.http.GET
 import retrofit2.http.Query

@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.inigofrabasa.cityflagandroid.ApiConstants.STATUS_OK
+import com.inigofrabasa.cityflagandroid.utils.ApiConstants.STATUS_OK
 import com.inigofrabasa.cityflagandroid.R
 import com.inigofrabasa.cityflagandroid.adapters.EntryAdapter
 import com.inigofrabasa.cityflagandroid.applicationDetail.DetailActivity

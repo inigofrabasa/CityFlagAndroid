@@ -1,7 +1,7 @@
 package com.inigofrabasa.cityflagandroid.data.repository
 
-import com.inigofrabasa.cityflagandroid.ApiConstants.CONNECTION_TIME_OUT
-import com.inigofrabasa.cityflagandroid.ApiConstants.READ_TIME_OUT
+import com.inigofrabasa.cityflagandroid.utils.ApiConstants.CONNECTION_TIME_OUT
+import com.inigofrabasa.cityflagandroid.utils.ApiConstants.READ_TIME_OUT
 import com.inigofrabasa.cityflagandroid.BuildConfig
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.OkHttpClient

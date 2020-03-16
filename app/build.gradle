@@ -36,6 +36,7 @@ android {
     productFlavors {
         develop {
             buildConfigField "String", "API_URL", "\"https://itunes.apple.com/us/rss/\""
+            buildConfigField "String", "LIMIT", "\"10\""
             buildConfigField "String", "ENVIRONTMENT", "\"develop\""
             buildConfigField "boolean", "IS_PRODUCTION", "false"
             resValue 'string', 'app_name', 'CityFlag - Android Dev'
@@ -43,6 +44,7 @@ android {
         }
         production {
             buildConfigField "String", "API_URL", "\"https://itunes.apple.com/us/rss/\""
+            buildConfigField "String", "LIMIT", "\"20\""
             buildConfigField "String", "ENVIRONTMENT", "\"production\""
             buildConfigField "boolean", "IS_PRODUCTION", "true"
             resValue 'string', 'app_name', 'CityFlag - Android'
